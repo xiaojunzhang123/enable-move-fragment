@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <HorizontalScrollView
+        android:id="@+id/mHorizontalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#555555" 
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#33b5e5" >
+
+            <RadioGroup
+                android:id="@+id/mRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:orientation="horizontal" 
+                android:layout_alignParentTop="true">
+
+                <RadioButton
+                    android:id="@+id/mRadioButton1"
+                    style="@style/radioButton"
+                    android:text="one" />
+
+                <RadioButton
+                    android:id="@+id/mRadioButton2"
+                    style="@style/radioButton"
+                    android:text="two" />
+
+                <RadioButton
+                    android:id="@+id/mRadioButton3"
+                    style="@style/radioButton"
+                    android:text="three" />
+
+                <RadioButton
+                    android:id="@+id/mRadioButton4"
+                    style="@style/radioButton"
+                    android:text="four" />
+
+                <RadioButton
+                    android:id="@+id/mRadioButton5"
+                    style="@style/radioButton"
+                    android:text="five" />
+            </RadioGroup>
+            <ImageView 
+                android:layout_width="100dp"
+                android:layout_height="4dp"
+                android:id="@+id/mImageView"
+                android:background="#33b5e5"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+      
+    </HorizontalScrollView>
+    
+      <android.support.v4.view.ViewPager
+            android:id="@+id/mViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            
+        </android.support.v4.view.ViewPager>
+
+</LinearLayout>
