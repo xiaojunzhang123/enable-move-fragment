@@ -38,6 +38,9 @@ public class MainActivity extends Activity implements OnCheckedChangeListener , 
 	private String  name ="zhangxiaojun";
 	private String pwd = "123";
 
+
+	private String current = "2016";
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
