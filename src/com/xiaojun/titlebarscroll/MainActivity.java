@@ -1,8 +1,5 @@
 package com.xiaojun.titlebarscroll;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.v4.view.PagerAdapter;
@@ -20,7 +17,12 @@ import android.widget.RadioGroup.OnCheckedChangeListener;
 import android.widget.RelativeLayout;
 import android.widget.RelativeLayout.LayoutParams;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class MainActivity extends Activity implements OnCheckedChangeListener , OnPageChangeListener {
+
+
 	private HorizontalScrollView mHorizontalScrollView;
 	private RadioGroup mRadioGroup;
 	private RadioButton mRadioButton1;
@@ -32,6 +34,10 @@ public class MainActivity extends Activity implements OnCheckedChangeListener , 
 	private ViewPager mViewPager;
 	private List<View> mList;
 	private float mCurrentRadioButtonLeft;
+
+	private String  name ="zhangxiaojun";
+	private String pwd = "123";
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -90,7 +96,7 @@ public class MainActivity extends Activity implements OnCheckedChangeListener , 
 
 	@Override
 	public void onCheckedChanged(RadioGroup group, int checkedId) {
-		//µ±Ä³Ò»¸öRadioButton±»Ñ¡ÖÐÊ±£¬ÏÂÃæµÄÍ¼Æ¬mImageView¾ÍÆ½»¬µÄÒÆ¶¯µ½¶ÔÓ¦µÄÏÂÃæ
+		//ï¿½ï¿½Ä³Ò»ï¿½ï¿½RadioButtonï¿½ï¿½Ñ¡ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼Æ¬mImageViewï¿½ï¿½Æ½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¶ï¿½ï¿½ï¿½ï¿½ï¿½Ó¦ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		 AnimationSet set=new AnimationSet(true);
 		 TranslateAnimation translate;
 		if(checkedId==R.id.mRadioButton1){
